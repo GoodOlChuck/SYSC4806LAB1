@@ -48,8 +48,8 @@ Rails.application.routes.draw do
   #   resources :posts, concerns: :toggleable
   #   resources :photos, concerns: :toggleable
   
-  root 'application#hello'
-      
+  root 'users#index'
+  get 'hello' => 'application#hello'    
   # Example resource route within a namespace:
   #   namespace :admin do
   #     # Directs /admin/products/* to Admin::ProductsController
